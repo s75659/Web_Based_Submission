@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 4 Webpage</title>
+  <link rel="stylesheet" href="style.css"> 
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background: #444;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    nav ul li a:hover {
+      background: #c5c0bd;
+    }
+
+    section {
+      padding: 20px;
+      background: white;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    video {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fafafa;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input, select, button {
+      padding: 10px;
+      font-size: 1em;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* Link states */
+    a:link { color: #FF0000; }   /* unvisited link */
+    a:visited { color: #00FF00; } /* visited link */
+    a:hover { color: #FF00FF; } /* mouse on link */
+    a:active { color: #0000FF; } /* selected link */
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My New Webpage</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#form">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <article>
+      <h2>About This Page</h2>
+      <p>This webpage demonstrates HTML5 structure, CSS styling, and form interaction.</p>
+    </article>
+  </section>
+
+  <section id="media">
+    <h2>Embedded Video</h2>
+    <video controls>
+      <source src="C:\Users\hafiz\Downloads\ZIKIR PAGI DAN PETANG.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <p style="text-align:center;"><em>Caption: Example of an embedded video element.</em></p>
+  </section>
+
+  <section id="form">
+    <h2>Contact Form</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="male"> Male
+      <input type="radio" name="gender" value="female"> Female
+
+      <label>Hobbies:</label>
+      <input type="checkbox" name="hobby" value="reading"> Reading
+      <input type="checkbox" name="hobby" value="sports"> Sports
+      <input type="checkbox" name="hobby" value="music"> Music
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Iman Hafizi</p>
+  </footer>
+
+</body>
+</html>
