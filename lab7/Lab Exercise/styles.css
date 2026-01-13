@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 160px;
+    height: 100%;
+    background: #1a1a1a;
+    padding-top: 25px;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: #444;
+}
+
+.hero {
+    height: 100vh;
+    background: url('images/hero.jpg') center/cover no-repeat;
+    margin-left: 160px;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(155, 4, 4, 0.55);
+    color: white;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-section {
+    background: url('images/formbg.jpg') center/cover no-repeat;
+    padding: 90px;
+    margin-left: 160px;
+}
+
+.form-box {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    max-width: 320px;
+}
+
+.form-box input,
+.form-box button {
+    width: 100%;
+    margin: 6px 0;
+    padding: 9px;
+}
+
+.slideshow {
+    margin-left: 160px;
+    width: 800px;     
+    height: 400px;     
+    overflow: hidden;
+}
+
+.slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: none;
+}
+
+.profile {
+    margin-left: 160px;
+    padding: 50px;
+}
+
+.card {
+    width: 260px;
+    box-shadow: 0 0 12px #bbb;
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.progress-section {
+    margin-left: 160px;
+    padding: 35px;
+}
+
+.progress-container {
+    width: 85%;
+    background: #ccc;
+}
+
+#loading-bar {
+    width: 0;
+    height: 18px;
+    background: #2e8b57;
+}
+
+.hidden {
+    display: none;
+}
+
+.collapsible-section {
+    margin-left: 160px;
+    padding: 30px;
+}

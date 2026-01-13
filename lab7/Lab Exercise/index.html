@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7 - Web Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="sidebar">
+        <a href="#home">Home</a>
+        <a href="#login">Sign In</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#extra">Info</a>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="overlay">
+            <h1>My Web Portfolio</h1>
+            <p>Minimalist </p>
+        </div>
+    </section>
+
+    <section id="login" class="form-section">
+        <div class="form-box">
+            <h2>User Login</h2>
+            <input type="text" placeholder="Enter username">
+            <input type="password" placeholder="Enter password">
+            <button>Login</button>
+        </div>
+    </section>
+
+    <section id="gallery" class="slideshow">
+        <img class="slide-img" src="smile.jpg   ">
+        <img class="slide-img" src="catsee.jpg">
+        <img class="slide-img" src="eagle.jpg">
+    </section>
+
+    <section id="about" class="profile">
+        <div class="card">
+            <img src="iman.jpeg" alt="Profile Picture">
+            <h3>Iman Hafizi</h3>
+            <p>Web Design Learner</p>
+            <div class="icons">
+                <span>🌍</span>
+                <span>✉️</span>
+                <span>💻</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="progress-section">
+        <h2>Learning Progress</h2>
+        <div class="progress-container">
+            <div id="loading-bar"></div>
+        </div>
+    </section>
+
+    <section id="extra" class="collapsible-section">
+        <button onclick="toggleInfo()">View More</button>
+        <div id="info" class="hidden">
+            <p>Additional details or notes can be placed here.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
