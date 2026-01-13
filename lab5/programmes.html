@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Programmes — Universiti Contoh Terengganu</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- reuse the same header as index (for a real project consider templates) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="umt logo" class="logo" />
+        <span class="brand-text">universiti contoh terengganu</span>
+      </a>
+      <button id="nav-toggle-2" aria-label="open navigation" aria-expanded="false">☰</button>
+      <nav id="main-nav-2" class="main-nav" aria-label="main navigation">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="programmes.html" class="active">programmes</a></li>
+          <li><a href="news.html">news</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>our programmes</h1>
+    <p>We offer undergraduate and postgraduate programmes across science, engineering, marine studies and social sciences.</p>
+
+    <section class="program-grid">
+      <article class="prog">
+        <h3>bachelor of marine science</h3>
+        <p>4-year degree with practical fieldwork and lab training.</p>
+      </article>
+
+      <article class="prog">
+        <h3>bachelor of engineering (marine)</h3>
+        <p>Industry-focused engineering training for coastal and marine applications.</p>
+      </article>
+
+      <article class="prog">
+        <h3>master of science (coastal studies)</h3>
+        <p>Research-based masters with supervisor matching and scholarship options.</p>
+      </article>
+
+      <article class="prog">
+        <h3>phd (marine ecology)</h3>
+        <p>Doctoral research with access to field stations and labs.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col"><h4>about</h4><p>Universiti Contoh Terengganu</p></div>
+      <div class="footer-col"><h4>links</h4><ul><li><a href="index.html">home</a></li></ul></div>
+      <div class="footer-col"><h4>contact</h4><address>...</address></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><small>© <span id="year-2"></span> universiti contoh terengganu</small></div></div>
+  </footer>
+
+  <script>
+    document.getElementById('year-2').textContent = new Date().getFullYear();
+  </script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
