@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Date and Time</title>
+  </head>
+  <body>
+    <h2>Click to Show Date and Time</h2>
+    <button type="button" onclick="showDateTime()">
+      Click me to display Date and Time
+    </button>
+    <p id="demo"></p>
+
+    <script>
+      function showDateTime() {
+        const demo = document.getElementById("demo");
+        demo.innerText = Date();
+        demo.style.color = "red";
+        demo.style.backgroundColor = "yellow";
+      }
+    </script>
+  </body>
+</html>
